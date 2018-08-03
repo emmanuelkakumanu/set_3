@@ -2,7 +2,7 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class Special_Char
+class Ideone
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
@@ -12,10 +12,12 @@ class Special_Char
 		for(int i=0;i<str.length();i++)
 		{
 		char ch=str.charAt(i);
-		boolean b1=(Character.isLetter(ch)) ||(Character.isDigit(ch)) ||(ch==' ') ;
-		if(b1==true)
-		cnt=0;
-		else 
+		boolean b1=(Character.isLetter(ch));// ||(Character.isDigit(ch)) ||(ch==' ') ;
+		boolean b2=Character.isDigit(ch);
+		boolean b3=ch==' ';
+		
+		
+		if(b1==false && b2==false && b3==false)
 		cnt++;
 		
 		}
