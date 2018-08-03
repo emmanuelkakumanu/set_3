@@ -15,9 +15,10 @@ class Ideone
 		boolean b1=(Character.isLetter(ch));// ||(Character.isDigit(ch)) ||(ch==' ') ;
 		boolean b2=Character.isDigit(ch);
 		boolean b3=ch==' ';
+		boolean b4=ch=='.';
 		
 		
-		if(b1==false && b2==false && b3==false)
+		if(b1==false && b2==false && b3==false && b4==false)
 		cnt++;
 		
 		}
